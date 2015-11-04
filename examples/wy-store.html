@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title id="title"></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <style>
+    	body{background-color:#f7f7f7;}
+    	/*头部*/
+    	.mui-bar.mui-bar-nav{background-color:#e50f08;}
+    	.mui-bar .mui-title{color:#fff;}
+    	.mui-icon-back:before,.mui-icon-left-nav:before{color:#fff;}
+    	
+    	.mb10{margin-bottom:10px;}
+    	.mui-bar-nav~.mui-content{padding-top:0;}
+    	/*1px的分割线*/
+    	.mui-table-view:before{
+		    height: 0px;
+		}
+    	.todayHot{height:35px;line-height:35px;padding-left:10px;color:#333;margin:0;}
+    	.todayHotUl li a{position:relative;}
+    	.todayHotUl .mui-media-back{position:absolute;bottom:5px;left:14px;background:rgba(0,0,0,.5);font-size:14px;width:100%;text-align:left;color:#fff;}
+    	.todayHotUl .mui-media-back s{font-size:12px;color:#ccc;margin-left:5px;}
+    	.mui-table-view.mui-grid-view .mui-table-view-cell{padding-top:0;}
+    </style>
+</head>
+<body>
+	<div class="mui-content mb10">
+		<div class="mui-collapse-content">
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../images/yuantiao.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../images/shuijiao.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../images/muwu.jpg">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../images/cbd.jpg">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../images/yuantiao.jpg">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../images/shuijiao.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<!--商品-->
+	<div class="mui-content mb10" style="background-color:#fff;">
+	    <h5 class="todayHot">今日爆款</h5>
+	    <ul class="mui-table-view mui-grid-view todayHotUl">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/shuijiao.jpg">
+	            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+	           </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/muwu.jpg">
+	            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4">
+	            <a href="#"><img class="mui-media-object" src="../images/cbd.jpg">
+	            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+	            </a>
+	        </li>
+	    </ul>    
+	</div>
+	
+	<!--品牌专场-->
+	<div class="mui-content" style="background-color:#fff;">
+	    <h5 class="todayHot">品牌专场</h5>
+	    <ul class="mui-table-view mui-grid-view todayHotUl">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-12">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/shuijiao.jpg">
+	            	<div class="mui-media-back">江小白全场赠送</div>
+	           </a>
+	        </li>
+	    </ul>    
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+</body>
+</html>

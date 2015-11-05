@@ -26,7 +26,7 @@
 			<span class="mui-tab-label">乐园</span>
 		</a>
 		<a class="mui-tab-item" href="examples/tab-webview-subpage-chat.html">
-			<div class="wy-main">
+			<div class="wy-main" >
 				<span class="mui-icon wy-icon my-icon-wy"></span>
 				<span class="mui-tab-label">挖鱼</span>
 			</div>
@@ -48,13 +48,14 @@
 			var subpages = ['examples/wy-store.html','examples/tab-webview-subpage-about.html', 'examples/tab-webview-subpage-chat.html', 'examples/tab-webview-subpage-contact.html', 'examples/tab-webview-subpage-setting.html','examples/tab-webview-subpage-setting.html'];
 			var subpage_style = {
 				top: '44px',
-				bottom: '181px'
+				bottom: '50px'
 			};
-			
 			var aniShow = {};
 			
 			 //创建子页面，首个选项卡页面显示，其它均隐藏；
 			mui.plusReady(function(){
+				//仅支持竖屏显示
+				plus.screen.lockOrientation("portrait-primary");
 				plus.navigator.setStatusBarBackground("#e50f08");
 				var self = plus.webview.currentWebview();
 				for (var i = 0; i < 5; i++){

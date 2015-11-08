@@ -1,7 +1,7 @@
 body{background-color:#f7f7f7;}
 *{font-family:'微软雅黑'}
 img{
-  background:red;
+  background:#ccc;
 }
 /*头部*/
 .mui-bar.mui-bar-nav{background-color:#e50f08}
@@ -89,12 +89,13 @@ img{
 .ppzcUl li .mui-media-back{font-size:16px;padding:5px 10px 5px 5px;overflow:hidden;text-overflow:ellipsis}
 
 /* 积分商城 */
-.jfscUl li{margin-bottom:10px}
-.jfscUl li a{position:relative;height:105px;overflow:hidden;}
-.jfscUl li a img{min-height:105px;margin-left:-1px}
-.jfscUl .mui-media-back{font-size:14px;width:100%;text-align:left;border:1px solid #e2e2e2;border-top:0;border-radius:0px 0px 10px 10px;padding:10px;}
-.jfscUl h6{height:30px;line-height:30px;color:#333;margin:0;font-size:20px}
+.jfscUl li{margin-bottom:10px; }
+.jfscUl li a{position:relative;height:105px;border-radius:6px 6px 0 0;border-bottom:0;padding:2px}
+.jfscUl li a img.mui-media-object{min-height:105px;margin-left:2px;border-radius:6px 6px 0 0;border:1px solid #ccc;vertical-align:bottom;border-bottom:0;width:calc(100%-2px)}
+.jfscUl .mui-media-back{font-size:14px;width:100%;text-align:left;border:1px solid #ccc;border-top:0;border-radius:0px 0px 6px 6px;padding:10px 5px;}
+.jfscUl h6{height:24px;line-height:24px;color:#333;margin:0;font-size:20px}
 .jfscUl .mui-media-back span{margin-right:5px;color:#ff6762}
+.mui-table-view.mui-grid-view .mui-table-view-cell>a:not(.mui-btn){margin-right:0px;margin-top:0}
 /* 自定义字体图标 */
 @font-face {font-family: "wy";
   src: url('../fonts/wy.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/

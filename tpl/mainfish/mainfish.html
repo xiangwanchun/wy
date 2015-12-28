@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/wafishtwo.css">
+	</head>
+	<body>
+		<div class="mui-content">
+			<section class="game-list list-full-width">
+				<div class="image-template">
+	
+						<img src="../images/wabanner.jpg" width="100%" />
+				</div>
+			</section>
+			<section class="wayu-title-banner white-bac mui-table-view">
+		
+					<div class="mui-pull-right">
+						<div class="orange-botton">进入活动</div>
+						<div class="color-orange">425人关注</div>
+					</div>
+					<div>
+						<div>金星秀之超能洗衣液专场</div>
+						<div class="color-orange">今天12:00:00</div>
+					</div>
+		
+			</section>
+			<ul class="mui-table-view" style="margin-top:10px;">
+				<li class="mui-table-view-cell">
+					<a  class="mui-navigate-right">
+						<span>更多预告</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				<li class="mui-table-view-cell more-col">	
+					<div class="img-table">
+						<img src="../images/wa1.jpg" />
+					</div>
+					<div class="list-detail">
+						<div>笑傲江湖之美图手机给你好看</div>
+						<div class="color-orange">今天12:00:00</div>
+						<p>美图手机2限时送礼，100台认你抽</p>
+					</div>
+					<div class="more-oparete" >
+						<div class="orange-botton remind">提醒我</div>
+						<div class="color-orange">425人关注</div>
+					</div>
+						
+				</li>
+				
+				<li class="mui-table-view-cell more-col">	
+					<div class="img-table">
+						<img src="../images/wa2.jpg" />
+					</div>
+					<div class="list-detail">
+						<div>极限挑战之滴滴专车送你回家</div>
+						<div class="color-orange">今天13:00:00</div>
+						<p>专车券快车券拼车券，想要什么快来拿</p>
+					</div>
+					<div class="more-oparete" >
+						<div class="orange-botton not-remind">取消提醒</div>
+						<div class="color-orange">425人关注</div>
+					</div>
+						
+				</li>
+				<li class="mui-table-view-cell more-col">	
+					<div class="img-table">
+						<img src="../images/wa3.jpg" />
+					</div>
+					<div class="list-detail">
+						<div>笑百里挑一之小米专场</div>
+						<div class="color-orange">今天14:00:00</div>
+						<p>小米双11爽够狂欢，千元优惠券任性送</p>
+					</div>
+					<div class="more-oparete" >
+						<div class="orange-botton not-remind">取消提醒</div>
+						<div class="color-orange">425人关注</div>
+					</div>
+						
+				</li>
+				<li class="mui-table-view-cell more-col">	
+					<div class="img-table">
+						<img src="../images/wa4.jpg" />
+					</div>
+					<div class="list-detail">
+						<div>妈妈咪呀之蜜芽专场</div>
+						<div class="color-orange">今天15:00:00</div>
+						<p>进口母婴免税店疯狂好礼大赠送</p>
+					</div>
+					<div class="more-oparete" >
+						<div class="orange-botton not-remind">取消提醒</div>
+						<div class="color-orange">425人关注</div>
+					</div>
+						
+				</li>
+				
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui(".more-oparete").on('tap','div',function(){
+			var $classname=this.className;
+			if($classname.indexOf("not")!=-1){
+				this.className='orange-botton remind';
+				this.innerHTML='提醒我';
+			}
+			else{
+				this.className='orange-botton not-remind';
+				this.innerHTML='取消提醒';
+			}
+		});
+	</script>
+</html>

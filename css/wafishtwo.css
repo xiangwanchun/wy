@@ -1,0 +1,225 @@
+
+body{
+	margin:0px;
+	padding:0px;
+	background:#f7f7f7;
+	font-size:1em;
+}
+img{
+	vertical-align:middle;
+}
+a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+header.mui-bar{
+	background:#e50f08;
+}
+.mui-bar-nav{
+	box-shadow: none;
+}
+.mui-title{
+	color: #FFFFFF;
+	font-size:1.3em;
+}
+.game-banner{
+	height:60px;
+	background:#FFFFFF;
+	display:-webkit-box;
+	display:-moz-box;
+	display:box;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+}
+.game-banner>div{
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	text-align: center;
+	height:100%;
+}
+.game-banner>div:first-child{
+	border-right: 1px solid #d9d9d9;
+}
+.game-banner span{
+	vertical-align: middle;
+	background-size: cover;
+	display:inline-block;
+	margin-top: 5px;
+}
+.game-banner>div:first-child span{
+	margin-top:8px;
+}
+.xyx{
+	width:40px;
+	height:40px;
+	background:url(../images/xingame.png) no-repeat;
+}
+.wyb{
+	width:35px;
+	height:45px;
+	background:url(../images/wyb.png) no-repeat;
+}
+.game-list{
+	background:#FFFFFF;
+	padding:10px;
+	margin-top:10px;
+}
+.game-list h1{
+	font-size:1em;
+}
+.game-list h1:first-child{
+	color:#f9941c;
+	margin-top:0px;
+}
+.image-template{
+	position:relative;
+}
+.position-title{
+	position:absolute;
+	bottom:0px;
+	background:#000000;
+	opacity: 0.7;
+	color:#FFFFFF;
+	width:100%;
+	text-indent: 15px;
+	line-height: 30px;
+	margin-bottom:0px;
+	display:none;
+}
+/*我的样式*/
+.person-photo{
+	padding:10px;
+	padding-left:20px;
+}
+.person-photo>div{
+	float: left;
+}
+.person-photo>div:last-child{
+	margin-top:20px;
+	margin-left:15px;
+}
+.toux-box{
+	border:2px solid #dddddd;
+	border-radius:50%;
+	overflow: hidden;
+	width:100px;
+	height:100px;
+}
+.mui-navigate-right i{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	background-size:cover;
+	vertical-align: middle;
+	margin-right:5px;
+}
+.mui-navigate-right i +span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.my-gift{
+	background:url(../images/lipin.png) no-repeat;
+}
+.my-exchange{
+	background:url(../images/duihuan.png) no-repeat;
+}
+.my-address{
+	background:url(../images/dizhi.png) no-repeat;
+}
+.my-collection{
+	background:url(../images/souc.png) no-repeat;
+}
+.my-setting{
+	background:url(../images/shezhi.png) no-repeat;
+}
+.zt{
+	width:80px;
+	height:28px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height:28px;
+	border-radius: 5px;
+	margin-top:5px;
+	background:url(../images/qdtu.png) no-repeat #f9941c 10px center;
+	background-size:auto 50%;
+	text-indent:10px;
+}
+.list-full-width{
+	padding:0px;
+	margin:0px;
+	border:none;
+}
+.wayu-title-banner{
+	padding:15px;
+}
+.white-bac{
+	background-color:#FFFFFF;
+}
+.color-orange{
+	color:#ff6762;
+}
+.orange-botton{
+	width:90px;
+	height:2em;
+	background-color:#ff6762;
+	border: 1px solid #ff6762;
+	color:#fff;
+	text-align:center;
+	border-radius:5px;
+	line-height:2em;
+}
+.orange-botton +.color-orange{
+	display:none;
+}
+.remind{
+	background:url(../images/naozhong.png) no-repeat 7px center #ff6762;
+	background-size:auto 60%;
+	text-indent:15px;
+}
+.not-remind{
+	background-color:#FFFFFF;
+	color: #ff6762;
+}
+.wayu-title-banner .mui-pull-right{
+	margin-top:-5px;
+	text-align: center;
+}
+.more-col{
+	display: -moz-box;
+	display:-webkit-box;
+	-webkit-box-orient: horizontal;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+}
+
+.img-table{
+	width:90px;
+}
+.img-table img{
+	width:80px;
+	height:80px;
+	border-radius:5px;
+}
+.list-detail{
+	-moz-box-flex: 3;
+	-webkit-box-flex: 3;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	margin-right:10px;
+}
+.more-oparete{
+	min-width:90px;
+	width:auto;
+}
+.more-oparete>div{
+	margin:0 auto;
+	text-align: center;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+padding-left:0px;
+padding-right:0px;
+margin-left:0px;
+margin-right:0px;
+}

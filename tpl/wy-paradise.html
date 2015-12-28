@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title id="title"></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link href="../css/myApp.css" rel="stylesheet"/>
+</head>
+<body>
+	<!--热门活动-->
+	<div class="mui-content mb10" style="background-color:#fff;">
+	    <h5 class="todayHot">热门活动</h5>
+	   <div id="Gallery" class="mui-slider">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-12 todayHotUl">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
+								<a href="#">
+					                <img class="mui-media-object" src="../images/test_wayu_hot_1.png">
+					            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+					           	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#">
+					                <img class="mui-media-object" src="../images/test_wayu_hot_2.png">
+					            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+					           	</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-12 todayHotUl">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#">
+					                <img class="mui-media-object" src="../images/shuijiao.jpg">
+					            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+					           	</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#">
+					                <img class="mui-media-object" src="../images/shuijiao.jpg">
+					            	<div class="mui-media-back">￥9.9<s>￥20</s></div>
+					           	</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<!--品牌专场-->
+	<div class="mui-content" style="background-color:#fff;">
+	    <h5 class="todayHot ppzc">积分商城</h5>
+	    <ul class="mui-table-view mui-grid-view jfscUl">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/wa1.jpg">
+	           </a>
+	           <div class="mui-media-back">
+	           		<h6>小电风扇</h6>
+	           		<p><span>20000</span>积分</p>
+	           </div>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/test_zh_bg1.jpg">
+	           </a>
+	           <div class="mui-media-back">
+	           		<h6>台灯</h6>
+	           		<p><span>20000</span>积分</p>
+	           </div>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/test_zh_bg2.jpg">
+	           </a>
+	           	<div class="mui-media-back">
+	           		<h6>积分商城</h6>
+	           		<p><span>20000</span>积分</p>
+	           </div>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/wayu_banner_test.jpg">
+	           </a>
+	           <div class="mui-media-back">
+	           		<h6>10元充值卡</h6>
+	           		<p><span>20000</span>积分</p>
+	           </div>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+	            <a href="#">
+	                <img class="mui-media-object" src="../images/test_wayu_zc_1.png">
+	           </a>
+	           <div class="mui-media-back">
+	           		<h6>成都三日游</h6>
+	           		<p><span>20000</span>积分</p>
+	           </div>
+	        </li>
+	    </ul>    
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+		mui.ready(function() {
+			var slider = document.getElementById('Gallery');
+			var group = slider.querySelector('.mui-slider-group');
+			var items = mui('.mui-slider-item', group);
+			//克隆第一个节点
+			var first = items[0].cloneNode(true);
+			first.classList.add('mui-slider-item-duplicate');
+			//克隆最后一个节点
+			var last = items[items.length - 1].cloneNode(true);
+			last.classList.add('mui-slider-item-duplicate');
+			//处理是否循环逻辑，若支持循环，需支持两点：
+			//1、在.mui-slider-group节点上增加.mui-slider-loop类
+			//2、重复增加2个循环节点，图片顺序变为：N、1、2...N、1
+			var sliderApi = mui(slider).slider();
+		});
+	</script>
+</body>
+</html>
